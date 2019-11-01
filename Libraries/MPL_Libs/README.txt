@@ -33,9 +33,13 @@ rules:
    the position from Simscape Multibody to the Simscape network.  The examples in this submission
    show how to do that.
 
-Copyright 2013-2018 The MathWorks, Inc.
+Copyright 2013-2019 The MathWorks, Inc.
 
 #########  Release History  #########  
+v 3.0 (R2019a)	Mar  2019   Updated for R2019a
+                            Joint limits within Simscape Multibody added (see sm_ssci_hinge_hardstop.slx)
+                            Physical Signal blocks updated for unit propagation.
+
 v 2.7 (R2018b)	Sep  2018   Updated for R2018b
 
 v 2.6 (R2018a)	Mar  2018   Updated for R2018a

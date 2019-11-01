@@ -15,7 +15,7 @@
 % motor windings can be simulated. MATLAB code shows how to accelerate
 % testing by reusing results from previous simulations.
 % 
-% Copyright 2017-2018 The MathWorks, Inc.
+% Copyright 2017-2019 The MathWorks, Inc.
 
 
 %% Model

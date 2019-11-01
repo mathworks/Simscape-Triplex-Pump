@@ -13,6 +13,6 @@ MATLAB code shows how to accelerate testing by reusing results from previous sim
 
 Run startup_sm_pump_triplex.m to begin.
 
-Copyright 2017-2018 The MathWorks, Inc.
+Copyright 2017-2019 The MathWorks, Inc.
 
 

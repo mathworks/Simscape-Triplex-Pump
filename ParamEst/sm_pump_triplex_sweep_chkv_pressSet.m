@@ -1,7 +1,7 @@
 % Code to sweep check valve pressure settings for the triplex pump
 % example and plot results.
 %
-% Copyright 2017-2018 The MathWorks, Inc.
+% Copyright 2017-2019 The MathWorks, Inc.
 
 mdlname =  'sm_pump_triplex';
 crp_set = linspace(30000,100000,8);

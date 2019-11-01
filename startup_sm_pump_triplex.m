@@ -1,6 +1,6 @@
 % Startup file for triplex pump example
 %
-% Copyright 2017-2018 The MathWorks, Inc.
+% Copyright 2017-2019 The MathWorks, Inc.
 
 % Set up path
 TRP_HomeDir = pwd;

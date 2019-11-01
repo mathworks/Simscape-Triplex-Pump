@@ -2,7 +2,7 @@ function sm_pump_triplex_DOEdata_tocsv(test_Data)
 % Code to generate measurement data with noise and missing measurements
 % from simulation results of sm_pump_triplex.slx
 %
-% Copyright 2017-2018 The MathWorks, Inc.
+% Copyright 2017-2019 The MathWorks, Inc.
 
 % Make data directory if it doesn't exist
 if ~exist('Data', 'dir')
