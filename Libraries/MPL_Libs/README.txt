@@ -36,6 +36,8 @@ rules:
 Copyright 2013-2018 The MathWorks, Inc.
 
 #########  Release History  #########  
+v 2.7 (R2018b)	Sep  2018   Updated for R2018b
+
 v 2.6 (R2018a)	Mar  2018   Updated for R2018a
 
 v 2.5 (R2017b)	Sept 2017   Added block Hydraulic Cylinder SA PS to library which models
