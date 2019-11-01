@@ -1,0 +1,216 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Triplex Pump with Faults Overview</title><meta name="generator" content="MATLAB 9.3"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2018-01-05"><meta name="DC.source" content="sm_pump_triplex_Demo_Script.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Triplex Pump with Faults Overview</h1><p>
+<tr> This example shows how to develop predictive maintenance algorithms. <br>
+<UL>
+<LI> <a href="matlab:cd(TRP_HomeDir);open_system('sm_pump_triplex');">Open Triplex Pump Model</a> (see also model <a href="matlab:web('sm_pump_triplex.html');">documentation</a>) <br>
+<LI> <a href="matlab:edit sm_pump_triplex_DOEdata_process;">Preprocess Measured Data from Pump</a><br>
+<LI> <a href="matlab:edit sm_pump_triplex_fault_detect_algo_design;">Create Training Data and Develop Predictive Maintenance Algorithm</a><br>
+</UL>
+<br>
+<tr>   <img src="sm_triplex_pump_mechExp_NoFaults_small.png" alt="Triplex Pump Image"><br>
+<br>
+<tr><b><u>Model</u></b><br>
+<tr>1.  <a href="matlab:cd(TRP_HomeDir);open_system('sm_pump_triplex');">Open Triplex Pump Model</a> (see also model <a href="matlab:web('sm_pump_triplex.html');">documentation</a>) <br>
+<br>
+<tr><b><u>Configure Model</u></b> (<a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Default');">use default</a>)<br>
+<table border=1><tr>
+<td style="text-align:center" colspan=4><b>Set Faults</b></td></tr>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');"><b>All Faults Off</b></a></td>
+<td><b>Plunger 1</b></td>
+<td><b>Plunger 2</b></td>
+<td><b>Plunger 3</b></td></tr>
+<td><b>Seal Leak</b> </td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','Off',1);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);">On</a></td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','Off',2);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',2);">On</a></td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','Off',3);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',3);">On</a></td></tr>
+<td><b>Blocked Inlet</b> </td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','Off',1);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',1);">On</a></td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','Off',2);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',2);">On</a></td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','Off',3);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',3);">On</a></td></tr>
+<td><b>Worn Bearing</b> </td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','Off');">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','On');">On</a></td></tr>
+<td><b>Broken Winding</b> </td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Broken Winding','Off');">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Broken Winding','On');">On</a></td></tr>
+</table><br>
+<table border=1><tr>
+<td style="text-align:center" colspan=5><b>Test Diagnostics</b> (<a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Diagnostics','Off');">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Diagnostics','On');">On</a>)</td></tr>
+<td><b>Trained Config</b></td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);">Leak</a></td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',1);">Leak+Block</a></td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','On');">Leak+Bearing</a></td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','On');">Block+Bearing</a></td></tr>
+<td><b>Untrained Config</b></td>
+<td colspan=2><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','On');">Leak+Block+Bearing</a></td>
+</table><br>
+<table border=1><tr>
+<td><b>Animation</b></td>
+<td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Vis','Off');">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Vis','On');">On</a></td></tr>
+<td><b>Driver</b></td>
+<td><a href="matlab:set_param('sm_pump_triplex/Driver','popup_driver_type','Motor');">Motor</a>, <a href="matlab:set_param('sm_pump_triplex/Driver','popup_driver_type','Dyno');">Dyno</a></td></tr>
+</table><br>
+<tr><b><u>Specification</u></b><br>
+<tr>2.  CAT Pumps Data Sheet: <a href="matlab:sm_pump_triplex_winopen_file('1051_C.pdf');">1051C</a><br>
+<tr>3.  Step File from CAT Pumps: <a href="matlab:sm_pump_triplex_open_system('CAT_Pump_1051C_STEP_file');">Model with STEP file</a><br>
+<tr>4.  SOLIDWORKS model: <a href="matlab:sm_pump_triplex_winopen_file('CAT_Pump_1051.SLDASM');">CAT_Pump_1051.SLDASM</a><br>
+<tr>5.  CAD Import: <a href="matlab:cd([TRP_HomeDir filesep 'CAD' filesep 'Import']);smimport('CAT_Pump_1051.xml');">Import XML using smimport()</a>, <a href="matlab:sm_pump_triplex_open_system('CAT_Pump_1051_imported');">Imported Model</a><br>
+<br>
+<tr><b><u>Match Nominal Behavior</u></b><br>
+<tr>6.  Tune Parameters: <a href="matlab:sm_pump_triplex_paramest_tune;">Open Tool</a>, <a href="matlab:sm_pump_triplex_paramest_compare;">Compare Results with Initial and Tuned Values</a><br>
+<br>
+<tr><b><u>Design Fault Detection Algorithm</u></b><br>
+<tr>7.  Sweep Severity of Seal Leak: <a href="matlab:sm_pump_triplex_sweep_fault_leak;">Run Sweep</a>, (<a href="matlab:edit sm_pump_triplex_sweep_fault_leak;">see code</a>)<br>
+<tr>8.  Sweep Severity of Blocked Inlet: <a href="matlab:sm_pump_triplex_sweep_fault_blockin;">Run Sweep</a>, (<a href="matlab:edit sm_pump_triplex_sweep_fault_blockin;">see code</a>)<br>
+<tr>9.  Sweep Severity of Bearing Wear: <a href="matlab:sm_pump_triplex_sweep_fault_bearing;">Run Sweep</a>, (<a href="matlab:edit sm_pump_triplex_sweep_fault_bearing;">see code</a>)<br>
+<tr>10. Generate Machine Learning Training Data: <a href="matlab:open_system([bdroot '/Sensing pq Out/Meas Scope/Output Pressure Measurement']);sm_pump_triplex_DOEdata_run(bdroot,'useShort','useSeries','on');">Run Short Sweep</a>, <a href="matlab:sm_pump_triplex_DOEdata_run(bdroot,'useLong','useParallel','on');">Run Long Sweep</a>, (<a href="matlab:edit sm_pump_triplex_DOEdata_run;">see code</a>)<br>
+<tr>11. Design Fault Detection Algorithm: <a href="matlab:edit sm_pump_triplex_fault_detect_algo_design;">Edit Live Script</a><br>
+<tr>12. Test Fault Detection Algorithm: <a href="matlab:sm_pump_triplex_fault_detect_algo_test;">Run 7 Scenarios</a>, (<a href="matlab:edit sm_pump_triplex_fault_detect_algo_test;">see code</a>)<br>
+<br>
+<tr><b><u>Videos</u></b><br>
+<tr>13.  <a href="matlab:sm_pump_triplex_winopen_file('sm_pump_triplex_noFault_16xs_loop_v3.mp4');">Animation of pump</a><br>
+<tr><br>
+</p><p>Copyright 2017-2018 The MathWorks&#8482;, Inc.</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Triplex Pump with Faults Overview
+%
+% <html>
+% <tr> This example shows how to develop predictive maintenance algorithms. <br>
+% <UL>
+% <LI> <a href="matlab:cd(TRP_HomeDir);open_system('sm_pump_triplex');">Open Triplex Pump Model</a> (see also model <a href="matlab:web('sm_pump_triplex.html');">documentation</a>) <br>
+% <LI> <a href="matlab:edit sm_pump_triplex_DOEdata_process;">Preprocess Measured Data from Pump</a><br>
+% <LI> <a href="matlab:edit sm_pump_triplex_fault_detect_algo_design;">Create Training Data and Develop Predictive Maintenance Algorithm</a><br>
+% </UL>
+% <br>
+% <tr>   <img src="sm_triplex_pump_mechExp_NoFaults_small.png" alt="Triplex Pump Image"><br>
+% <br>
+% <tr><b><u>Model</u></b><br>
+% <tr>1.  <a href="matlab:cd(TRP_HomeDir);open_system('sm_pump_triplex');">Open Triplex Pump Model</a> (see also model <a href="matlab:web('sm_pump_triplex.html');">documentation</a>) <br>
+% <br>
+% <tr><b><u>Configure Model</u></b> (<a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Default');">use default</a>)<br>
+% <table border=1><tr>
+% <td style="text-align:center" colspan=4><b>Set Faults</b></td></tr>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');"><b>All Faults Off</b></a></td>
+% <td><b>Plunger 1</b></td>
+% <td><b>Plunger 2</b></td>
+% <td><b>Plunger 3</b></td></tr>
+% <td><b>Seal Leak</b> </td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','Off',1);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);">On</a></td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','Off',2);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',2);">On</a></td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','Off',3);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',3);">On</a></td></tr>
+% <td><b>Blocked Inlet</b> </td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','Off',1);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',1);">On</a></td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','Off',2);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',2);">On</a></td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','Off',3);">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',3);">On</a></td></tr>
+% <td><b>Worn Bearing</b> </td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','Off');">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','On');">On</a></td></tr>
+% <td><b>Broken Winding</b> </td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Broken Winding','Off');">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Broken Winding','On');">On</a></td></tr>
+% </table><br>
+% <table border=1><tr>
+% <td style="text-align:center" colspan=5><b>Test Diagnostics</b> (<a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Diagnostics','Off');">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Diagnostics','On');">On</a>)</td></tr>
+% <td><b>Trained Config</b></td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);">Leak</a></td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',1);">Leak+Block</a></td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','On');">Leak+Bearing</a></td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','On');">Block+Bearing</a></td></tr>
+% <td><b>Untrained Config</b></td>
+% <td colspan=2><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','faults off');sm_pump_triplex_config_model('sm_pump_triplex','Seal Leak','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Blocked Inlet','On',1);sm_pump_triplex_config_model('sm_pump_triplex','Worn Bearing','On');">Leak+Block+Bearing</a></td>
+% </table><br>
+% <table border=1><tr>
+% <td><b>Animation</b></td>
+% <td><a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Vis','Off');">Off</a>, <a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Vis','On');">On</a></td></tr>
+% <td><b>Driver</b></td>
+% <td><a href="matlab:set_param('sm_pump_triplex/Driver','popup_driver_type','Motor');">Motor</a>, <a href="matlab:set_param('sm_pump_triplex/Driver','popup_driver_type','Dyno');">Dyno</a></td></tr>
+% </table><br>
+% <tr><b><u>Specification</u></b><br>
+% <tr>2.  CAT Pumps Data Sheet: <a href="matlab:sm_pump_triplex_winopen_file('1051_C.pdf');">1051C</a><br>
+% <tr>3.  Step File from CAT Pumps: <a href="matlab:sm_pump_triplex_open_system('CAT_Pump_1051C_STEP_file');">Model with STEP file</a><br>
+% <tr>4.  SOLIDWORKS model: <a href="matlab:sm_pump_triplex_winopen_file('CAT_Pump_1051.SLDASM');">CAT_Pump_1051.SLDASM</a><br>
+% <tr>5.  CAD Import: <a href="matlab:cd([TRP_HomeDir filesep 'CAD' filesep 'Import']);smimport('CAT_Pump_1051.xml');">Import XML using smimport()</a>, <a href="matlab:sm_pump_triplex_open_system('CAT_Pump_1051_imported');">Imported Model</a><br>
+% <br>
+% <tr><b><u>Match Nominal Behavior</u></b><br>
+% <tr>6.  Tune Parameters: <a href="matlab:sm_pump_triplex_paramest_tune;">Open Tool</a>, <a href="matlab:sm_pump_triplex_paramest_compare;">Compare Results with Initial and Tuned Values</a><br>
+% <br>
+% <tr><b><u>Design Fault Detection Algorithm</u></b><br>
+% <tr>7.  Sweep Severity of Seal Leak: <a href="matlab:sm_pump_triplex_sweep_fault_leak;">Run Sweep</a>, (<a href="matlab:edit sm_pump_triplex_sweep_fault_leak;">see code</a>)<br>
+% <tr>8.  Sweep Severity of Blocked Inlet: <a href="matlab:sm_pump_triplex_sweep_fault_blockin;">Run Sweep</a>, (<a href="matlab:edit sm_pump_triplex_sweep_fault_blockin;">see code</a>)<br>
+% <tr>9.  Sweep Severity of Bearing Wear: <a href="matlab:sm_pump_triplex_sweep_fault_bearing;">Run Sweep</a>, (<a href="matlab:edit sm_pump_triplex_sweep_fault_bearing;">see code</a>)<br>
+% <tr>10. Generate Machine Learning Training Data: <a href="matlab:open_system([bdroot '/Sensing pq Out/Meas Scope/Output Pressure Measurement']);sm_pump_triplex_DOEdata_run(bdroot,'useShort','useSeries','on');">Run Short Sweep</a>, <a href="matlab:sm_pump_triplex_DOEdata_run(bdroot,'useLong','useParallel','on');">Run Long Sweep</a>, (<a href="matlab:edit sm_pump_triplex_DOEdata_run;">see code</a>)<br>
+% <tr>11. Design Fault Detection Algorithm: <a href="matlab:edit sm_pump_triplex_fault_detect_algo_design;">Edit Live Script</a><br>
+% <tr>12. Test Fault Detection Algorithm: <a href="matlab:sm_pump_triplex_fault_detect_algo_test;">Run 7 Scenarios</a>, (<a href="matlab:edit sm_pump_triplex_fault_detect_algo_test;">see code</a>)<br>
+% <br>
+% <tr><b><u>Videos</u></b><br>
+% <tr>13.  <a href="matlab:sm_pump_triplex_winopen_file('sm_pump_triplex_noFault_16xs_loop_v3.mp4');">Animation of pump</a><br>
+% <tr><br>
+% </html>
+% 
+% Copyright 2017-2018 The MathWorks(TM), Inc.
+
+##### SOURCE END #####
+--></body></html>

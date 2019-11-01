@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="11/24/17||16:35:45" using="Simscape Multibody Link Version 4.9" from="SolidWorks 25.2.0"/>
+<ModelUnits mass="kilogram" length="inch"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="CAT_Pump_1051" uid="CAT_Pump_1051" version="114">
+<AssemblyFile name="CAT_Pump_1051.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Bolts^CAT_Pump_1051-1" uid="Bolts^CAT_Pump_1051-1" entityUid="Bolts^CAT_Pump_1051" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Hex_Nut_M10-2" uid="Hex_Nut_M10-2" entityUid="Hex_Nut_M10*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.076835000000000001 0.024129999999999999 0.21596879999999982</Translation>
+</Transform>
+</Instance>
+<Instance name="Bolt-3" uid="Bolt-3" entityUid="Bolt*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.076835000000000001 0.024130000000000019 0.18161879999999983</Translation>
+</Transform>
+</Instance>
+<Instance name="Hex_Nut_M10-4" uid="Hex_Nut_M10-4" entityUid="Hex_Nut_M10*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.076835000000000001 0.024130000000000013 0.21596879999999985</Translation>
+</Transform>
+</Instance>
+<Instance name="Hex_Nut_M10-3" uid="Hex_Nut_M10-3" entityUid="Hex_Nut_M10*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.076835000000000001 -0.024129999999999999 0.21596879999999982</Translation>
+</Transform>
+</Instance>
+<Instance name="Bolt-4" uid="Bolt-4" entityUid="Bolt*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>-0.076835000000000001 -0.024129999999999999 0.18161879999999983</Translation>
+</Transform>
+</Instance>
+<Instance name="Hex_Nut_M10-1" uid="Hex_Nut_M10-1" entityUid="Hex_Nut_M10*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.076834999999999987 -0.024129999999999999 0.21596879999999982</Translation>
+</Transform>
+</Instance>
+<Instance name="Bolt-2" uid="Bolt-2" entityUid="Bolt*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.076834999999999987 -0.024129999999999999 0.18161879999999983</Translation>
+</Transform>
+</Instance>
+<Instance name="Bolt-1" uid="Bolt-1" entityUid="Bolt*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.076835000000000001 0.024130000000000002 0.18161879999999986</Translation>
+</Transform>
+</Instance>
+</Instance>
+<Instance name="Housing^CAT_Pump_1051-1" uid="Housing^CAT_Pump_1051-1" entityUid="Housing^CAT_Pump_1051" rigid="true">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<Instance name="Manifold-1" uid="Manifold-1" entityUid="Manifold*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0.19486879999999984</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="Housing-1" uid="Housing-1" entityUid="Housing*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.47843137254901957" g="0.62352941176470589" b="0.81960784313725488" a="1"/>
+<Diffuse r="0.47843137254901957" g="0.62352941176470589" b="0.81960784313725488" a="1"/>
+<Specular r="0.23921568627450979" g="0.31176470588235294" b="0.40980392156862744" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Instance>
+</Instance>
+</InstanceTree>
+<Constraints>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+<Assembly name="Bolts^CAT_Pump_1051" uid="Bolts^CAT_Pump_1051" version="102">
+<ModelUnits mass="kilogram" length="inch"/>
+<AssemblyFile name="CAT_Pump_1051.sldasm" type="SolidWorks Assembly"/>
+</Assembly>
+<Assembly name="Housing^CAT_Pump_1051" uid="Housing^CAT_Pump_1051" version="102">
+<ModelUnits mass="kilogram" length="inch"/>
+<AssemblyFile name="CAT_Pump_1051.sldasm" type="SolidWorks Assembly"/>
+</Assembly>
+</Assemblies>
+<Parts>
+<Part name="Bolt" uid="Bolt*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Bolt.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0035169769326751565</Mass>
+<CenterOfMass>0 0 0.02250000000000775</CenterOfMass>
+<Inertia>6.0973844389637227e-007 6.0973844389637227e-007 4.3786975476897637e-008 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Bolt_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Hex_Nut_M10" uid="Hex_Nut_M10*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Hex_Nut_M10.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0013650599694387834</Mass>
+<CenterOfMass>0 0 -0.0041984054854387193</CenterOfMass>
+<Inertia>3.8321033317559822e-008 3.8321015423926376e-008 6.1014730165371954e-008 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Hex_Nut_M10_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Housing" uid="Housing*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Housing.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.3604922002071307</Mass>
+<CenterOfMass>-1.6207639440530358e-006 -0.00090692186560947005 0.044673640163647069</CenterOfMass>
+<Inertia>0.046494133699249145 0.053912156995369623 0.02636710863647463 1.4751161786882727e-005 -4.3594381551458844e-007 -1.8753015989678243e-008</Inertia>
+</MassProperties>
+<GeometryFile name="Housing_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.47843137254901957" g="0.62352941176470589" b="0.81960784313725488" a="1"/>
+<Diffuse r="0.47843137254901957" g="0.62352941176470589" b="0.81960784313725488" a="1"/>
+<Specular r="0.23921568627450979" g="0.31176470588235294" b="0.40980392156862744" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Manifold" uid="Manifold*:*Default" version="104">
+<ModelUnits mass="kilogram" length="inch"/>
+<PartFile name="Manifold.sldprt" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>1.1469225249905119</Mass>
+<CenterOfMass>-1.4611746468127658e-006 -0.0020703186325304354 0.064763419512991915</CenterOfMass>
+<Inertia>0.0019944584715422828 0.0028054648364993703 0.0029398995298798481 0.00015441678764874112 -6.9307546035551821e-008 1.5024098545230169e-008</Inertia>
+</MassProperties>
+<GeometryFile name="Manifold_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Diffuse r="0.75294117647058822" g="0.75294117647058822" b="0.75294117647058822" a="1"/>
+<Specular r="0.37647058823529411" g="0.37647058823529411" b="0.37647058823529411" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
