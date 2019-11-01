@@ -11,6 +11,8 @@ if(nargin>=4)
     plunger_num = varargin{2};
 end
 
+open_system(mdlname);
+
 switch lower(config_option)
     case 'default'
         disable_faults(mdlname)

@@ -11,7 +11,7 @@ Effects of failing components are included in this example. Degraded behavior du
 to seal leakage, blocked inlets, bearing wear, and broken motor windings can be simulated. 
 MATLAB code shows how to accelerate testing by reusing results from previous simulations.
 
-Run startup_sm_pump_triplex.m to begin.
+Open the project Triplex_Pump.prj to begin.
 
 Copyright 2017-2019 The MathWorks, Inc.
 

@@ -3,7 +3,7 @@
 % <html>
 % <tr> This example shows how to develop predictive maintenance algorithms. <br>
 % <UL>
-% <LI> <a href="matlab:cd(TRP_HomeDir);open_system('sm_pump_triplex');">Open Triplex Pump Model</a> (see also model <a href="matlab:web('sm_pump_triplex.html');">documentation</a>) <br>
+% <LI> <a href="matlab:cd(fileparts(which('sm_pump_triplex.slx')));open_system('sm_pump_triplex');">Open Triplex Pump Model</a> (see also model <a href="matlab:web('sm_pump_triplex.html');">documentation</a>) <br>
 % <LI> <a href="matlab:edit sm_pump_triplex_DOEdata_process;">Preprocess Measured Data from Pump</a><br>
 % <LI> <a href="matlab:edit sm_pump_triplex_fault_detect_algo_design;">Create Training Data and Develop Predictive Maintenance Algorithm</a><br>
 % </UL>
@@ -11,7 +11,7 @@
 % <tr>   <img src="sm_triplex_pump_mechExp_NoFaults_small.png" alt="Triplex Pump Image"><br>
 % <br>
 % <tr><b><u>Model</u></b><br>
-% <tr>1.  <a href="matlab:cd(TRP_HomeDir);open_system('sm_pump_triplex');">Open Triplex Pump Model</a> (see also model <a href="matlab:web('sm_pump_triplex.html');">documentation</a>) <br>
+% <tr>1.  <a href="matlab:cd(fileparts(which('sm_pump_triplex.slx')));open_system('sm_pump_triplex');">Open Triplex Pump Model</a> (see also model <a href="matlab:web('sm_pump_triplex.html');">documentation</a>) <br>
 % <br>
 % <tr><b><u>Configure Model</u></b> (<a href="matlab:sm_pump_triplex_config_model('sm_pump_triplex','Default');">use default</a>)<br>
 % <table border=1><tr>
@@ -53,7 +53,7 @@
 % <tr>2.  CAT Pumps Data Sheet: <a href="matlab:sm_pump_triplex_winopen_file('1051_C.pdf');">1051C</a><br>
 % <tr>3.  Step File from CAT Pumps: <a href="matlab:sm_pump_triplex_open_system('CAT_Pump_1051C_STEP_file');">Model with STEP file</a><br>
 % <tr>4.  SOLIDWORKS model: <a href="matlab:sm_pump_triplex_winopen_file('CAT_Pump_1051.SLDASM');">CAT_Pump_1051.SLDASM</a><br>
-% <tr>5.  CAD Import: <a href="matlab:cd([TRP_HomeDir filesep 'CAD' filesep 'Import']);smimport('CAT_Pump_1051.xml');">Import XML using smimport()</a>, <a href="matlab:sm_pump_triplex_open_system('CAT_Pump_1051_imported');">Imported Model</a><br>
+% <tr>5.  CAD Import: <a href="matlab:cd(fileparts(which('CAT_Pump_1051.xml')));smimport('CAT_Pump_1051.xml');">Import XML using smimport()</a>, <a href="matlab:sm_pump_triplex_open_system('CAT_Pump_1051_imported');">Imported Model</a><br>
 % <br>
 % <tr><b><u>Match Nominal Behavior</u></b><br>
 % <tr>6.  Tune Parameters: <a href="matlab:sm_pump_triplex_paramest_tune;">Open Tool</a>, <a href="matlab:sm_pump_triplex_paramest_compare;">Compare Results with Initial and Tuned Values</a><br>
