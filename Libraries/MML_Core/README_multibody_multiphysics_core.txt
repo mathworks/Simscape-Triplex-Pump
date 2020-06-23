@@ -33,9 +33,12 @@ rules:
    the position from Simscape Multibody to the Simscape network.  The examples in this submission
    show how to do that.
 
-Copyright 2013-2019 The MathWorks, Inc.
+Copyright 2013-2020 The MathWorks, Inc.
 
 #########  Release History  #########  
+v 4.0 (R2020a)	Mar  2020   Updated for R2020a
+      (R2019b)
+
 v 4.0 (R2019b)	Sep  2019   Updated for R2019b
                             Converted to MATLAB Project with core content as Reference Project
 

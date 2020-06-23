@@ -2,7 +2,7 @@
 % example.  Sets up workspace and model, and opens parameter estimation
 % tool.
 %
-% Copyright 2017-2019 The MathWorks, Inc.
+% Copyright 2017-2020 The MathWorks, Inc.
 
 mdlname = 'sm_pump_triplex';
 

@@ -11,7 +11,7 @@
 % hydraulic and mechanical models using physical signal connections.
 % 
 %
-% Copyright 2017-2019 The MathWorks, Inc.
+% Copyright 2017-2020 The MathWorks, Inc.
 
 
 

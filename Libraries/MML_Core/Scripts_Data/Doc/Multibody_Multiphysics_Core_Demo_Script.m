@@ -15,4 +15,4 @@
 % <tr>3. Single Piston Pump: <a href="matlab:open_system('sm_ssci_02_cylinder_sa_pump.slx');">Model</a>, <a href="matlab:web('sm_ssci_02_cylinder_sa_pump.html');">Documentation</a><br>
 % </html>
 % 
-% Copyright 2016-2019 The MathWorks(TM), Inc.
+% Copyright 2016-2020 The MathWorks(TM), Inc.

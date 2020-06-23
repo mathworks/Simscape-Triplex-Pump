@@ -13,6 +13,6 @@ MATLAB code shows how to accelerate testing by reusing results from previous sim
 
 Open the project Triplex_Pump.prj to begin.
 
-Copyright 2017-2019 The MathWorks, Inc.
+Copyright 2017-2020 The MathWorks, Inc.
 
 

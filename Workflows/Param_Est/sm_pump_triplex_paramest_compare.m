@@ -1,7 +1,7 @@
 % Code to get simulation results with initial and tuned pressure settings
 % for check valve in the triplex pump example.
 %
-% Copyright 2017-2019 The MathWorks, Inc.
+% Copyright 2017-2020 The MathWorks, Inc.
 
 sm_pump_triplex_config_model(bdroot,'Default');
 sm_pump_triplex_paramest_values(bdroot,'initial');

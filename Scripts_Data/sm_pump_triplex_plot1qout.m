@@ -4,7 +4,7 @@
 % The plot below shows the volumetric flow rate at the output of each
 % plunger as well as the overall output of the pump.
 %
-% Copyright 2017-2019 The MathWorks, Inc.
+% Copyright 2017-2020 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sm_pump_triplex', 'var')
