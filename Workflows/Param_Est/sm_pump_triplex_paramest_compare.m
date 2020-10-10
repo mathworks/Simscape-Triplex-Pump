@@ -6,11 +6,11 @@
 sm_pump_triplex_config_model(bdroot,'Default');
 sm_pump_triplex_paramest_values(bdroot,'initial');
 sim(bdroot);
-simlog_pO_init = simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.p;
+simlog_pO_init = simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.P;
 
 sm_pump_triplex_paramest_values(bdroot,'final');
 sim(bdroot);
-simlog_pO_final = simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.p;
+simlog_pO_final = simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.P;
 
 %% Plot Results
 if ~exist('h10_sm_pump_triplex', 'var') || ...

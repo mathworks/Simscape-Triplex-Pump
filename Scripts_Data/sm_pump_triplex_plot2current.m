@@ -23,7 +23,7 @@ temp_colororder = get(gca,'defaultAxesColorOrder');
 
 % Get simulation results
 simlog_t = simlog_sm_pump_triplex.Pump.Plunger_1.Check_Valve_Outlet.flow_rate.series.time;
-simlog_pO = simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.p.series.values('bar');
+simlog_pO = simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.P.series.values('bar');
 simlog_iM = simlog_sm_pump_triplex.Sensing_Current.Current_Sensor.I.series.values('A');
 
 simlot_pOmeas = logsout_sm_pump_triplex.get('pOut_meas');

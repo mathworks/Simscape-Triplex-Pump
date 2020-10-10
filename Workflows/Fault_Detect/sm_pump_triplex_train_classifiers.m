@@ -41,4 +41,4 @@ save(['sm_pump_triplex_trained_classifiers' filenameSuffix '.mat'],...
 
 % Create model for use in simulation or for conversion to embedded code
 compactMdl = boostedTreeNumeric.ClassificationEnsemble;
-saveCompactModel(compactMdl,['sm_pump_triplex_fault_detect_algo' filenameSuffix]);
+saveLearnerForCoder(compactMdl,['sm_pump_triplex_fault_detect_algo' filenameSuffix]);

@@ -8,8 +8,8 @@ for i=1:length(simOut_var)
     results(i).sim.time   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Flow_Rate_Sensor.q.series.time;
     results(i).sim.qOut   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Flow_Rate_Sensor.q.series.values('lpm');
     results(i).sim.iMotor = simOut_var(i).simlog_sm_pump_triplex.Sensing_Current.Current_Sensor.I.series.values('A');
-    results(i).sim.pIn    = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_In.Pressure_Sensor.p.series.values('bar');
-    results(i).sim.pOut   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.p.series.values('bar');
+    results(i).sim.pIn    = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_In.Pressure_Sensor.P.series.values('bar');
+    results(i).sim.pOut   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.P.series.values('bar');
     
     temp_iqOutMeas = simOut_var(i).logsout_sm_pump_triplex.get('qOut_meas');
     temp_iMotMeas = simOut_var(i).logsout_sm_pump_triplex.get('iMotor_meas');
