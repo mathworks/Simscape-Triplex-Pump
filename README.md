@@ -1,6 +1,8 @@
 # **Triplex Pump with Faults**
 Copyright 2017-2020 The MathWorks(TM), Inc.
 
+[![View Predictive Maintenance in Hydraulic Pump on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://www.mathworks.com/matlabcentral/fileexchange/65605-predictive-maintenance-in-hydraulic-pump)
+
 This example models a triplex pump. Three plungers are attached to a single crankshaft 
 with crankpins that are 120 degrees out of phase. The result is that at least one chamber 
 is always discharging which produces smoother flow than single or duplex pumps.
