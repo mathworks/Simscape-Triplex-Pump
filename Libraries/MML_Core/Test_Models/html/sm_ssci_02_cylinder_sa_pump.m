@@ -1,4 +1,4 @@
-%% Single Piston Pump
+%% Single Piston Pump, Custom Piston
 % 
 % This example models a single piston pump.  The rotation of the pump
 % crankshaft slides the piston back and forth.  During half of the rotation,
@@ -8,10 +8,11 @@
 %
 % The piston chamber is modeled with a single-acting hydraulic cylinder.
 % The force, position, and velocity are held consistent between the
-% hydraulic and mechanical models using physical signal connections.
+% hydraulic and mechanical models using physical signal connections. This
+% version uses a custom Simscape language implementation.
 % 
 %
-% Copyright 2017-2020 The MathWorks, Inc.
+% Copyright 2017-2021 The MathWorks, Inc.
 
 
 

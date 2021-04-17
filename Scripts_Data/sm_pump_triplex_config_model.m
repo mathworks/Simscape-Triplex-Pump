@@ -1,7 +1,7 @@
 function sm_pump_triplex_config_model(mdlname, config_option, varargin)
 % Function to configure sm_pump_triplex
 %
-% Copyright 2017-2020 The MathWorks, Inc.
+% Copyright 2017-2021 The MathWorks, Inc.
 
 if(nargin>=3)
     onOff = varargin{1};

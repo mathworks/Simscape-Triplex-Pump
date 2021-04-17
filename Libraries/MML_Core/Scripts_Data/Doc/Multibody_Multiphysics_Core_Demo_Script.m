@@ -12,7 +12,8 @@
 % <tr><b><u>Simple Examples </u></b><br>
 % <tr>1. Joint Limits and Friction Methods in a Hinge: <a href="matlab:open_system('sm_ssci_hinge_hardstop.slx');">Model</a>, <a href="matlab:web('sm_ssci_hinge_hardstop.html');">Documentation</a><br>
 % <tr>2. Slider Crank Mechanism with Friction: <a href="matlab:open_system('sm_ssci_01_slider_crank.slx');">Model</a>, <a href="matlab:web('sm_ssci_01_slider_crank.html');">Documentation</a><br>
-% <tr>3. Single Piston Pump: <a href="matlab:open_system('sm_ssci_02_cylinder_sa_pump.slx');">Model</a>, <a href="matlab:web('sm_ssci_02_cylinder_sa_pump.html');">Documentation</a><br>
+% <tr>3. Single Piston Pump: <a href="matlab:open_system('sm_ssci_03_cylinder_sa_pump_flib.slx');">Model</a>, <a href="matlab:web('sm_ssci_03_cylinder_sa_pump_flib.html');">Documentation</a><br>
+% <tr>4. Single Piston Pump, Custom: <a href="matlab:open_system('sm_ssci_02_cylinder_sa_pump.slx');">Model</a>, <a href="matlab:web('sm_ssci_02_cylinder_sa_pump.html');">Documentation</a><br>
 % </html>
 % 
-% Copyright 2016-2020 The MathWorks(TM), Inc.
+% Copyright 2016-2021 The MathWorks(TM), Inc.

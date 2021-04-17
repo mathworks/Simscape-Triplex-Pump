@@ -2,7 +2,7 @@ function results = sm_pump_triplex_getMeas(simOut_var)
 % Code to extract signals representing measurements
 % from the single simulation output of sm_pump_triplex
 %
-% Copyright 2017-2020 The MathWorks, Inc.
+% Copyright 2017-2021 The MathWorks, Inc.
 
 for i=1:length(simOut_var)
     results(i).sim.time   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Flow_Rate_Sensor.q.series.time;

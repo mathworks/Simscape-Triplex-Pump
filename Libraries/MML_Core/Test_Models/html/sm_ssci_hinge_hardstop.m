@@ -14,7 +14,7 @@
 % For all methods, the position and orientation of the two frames connected
 % to the joint must be coordinated with the limits set in the hard stop.
 %
-% Copyright 2016-2020 The MathWorks, Inc.
+% Copyright 2016-2021 The MathWorks, Inc.
 
 
 %% Model
@@ -37,9 +37,9 @@ set_param(find_system('sm_ssci_hinge_hardstop','FindAll', 'on','type','annotatio
 % use this method, set Actuation-->Torque to "Provided by Input" and enable
 % velocity sensing within the Revolute Joint block.
 %
-% Interface subsystem built using Foundation Library blocks:
-set_param('sm_ssci_hinge_hardstop/Hard Stop Friction TS','LinkStatus','none')
-open_system('sm_ssci_hinge_hardstop/Intf FLib','force')
+% Interface from Foundation Library:
+
+open_system('fl_lib/Mechanical/Multibody Interfaces','force')
 
 %% Joint Actuation Method
 % This method communicates position and velocity information to the

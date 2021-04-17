@@ -1,7 +1,7 @@
 % Code to plot time domain results of training runs for the triplex pump
 % example
 %
-% Copyright 2017-2020 The MathWorks, Inc.
+% Copyright 2017-2021 The MathWorks, Inc.
 
 %% Reuse figure if it exists, else create new figure
 if ~exist('h6_sm_pump_triplex', 'var') || ...

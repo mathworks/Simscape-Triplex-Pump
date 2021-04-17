@@ -1,5 +1,5 @@
 function shutdown_Multibody_Multiphysics_Core
-% Copyright 2016-2020 The MathWorks, Inc.
+% Copyright 2016-2021 The MathWorks, Inc.
 
 curr_proj = simulinkproject;
 cd(curr_proj.RootFolder);

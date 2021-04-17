@@ -1,6 +1,6 @@
 % Code to set model sm_pump_triplex back to defaults
 %
-% Copyright 2017-2020 The MathWorks, Inc.
+% Copyright 2017-2021 The MathWorks, Inc.
 
 set_param([bdroot '/Pump'],'leak_cyl1_popup','Off','leak_cyl2_popup','Off','leak_cyl3_popup','Off');
 set_param([bdroot '/Pump'],'block_in_cyl1_popup','Off','block_in_cyl2_popup','Off','block_in_cyl3_popup','Off');

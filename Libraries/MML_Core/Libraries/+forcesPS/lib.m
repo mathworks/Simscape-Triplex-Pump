@@ -1,6 +1,6 @@
 function lib( libInfo )
 % Customize library
-% Copyright 2005-2020 The MathWorks, Inc
+% Copyright 2005-2021 The MathWorks, Inc
 
 libInfo.Name = 'Simscape Forces Library';
 CurrentDate = date;
