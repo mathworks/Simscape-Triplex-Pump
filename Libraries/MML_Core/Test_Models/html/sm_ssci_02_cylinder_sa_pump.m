@@ -41,6 +41,18 @@ sm_ssci_02_cylinder_sa_pump_plot1qpump;
 sm_ssci_02_cylinder_sa_pump_plot2vtank;
 
 %%
+%
+% The plot below shows the speed of the piston and the torque applied at
+% the crank.  The required torque varies primarily with the speed of the
+% piston due to friction and force required to move the fluid into and out
+% of the piston chamber.
+%
+
+
+sm_ssci_02_cylinder_sa_pump_plot3tmotor;
+
+
+%%
 
 %clear all
 close all

@@ -36,6 +36,9 @@ rules:
 Copyright 2013-2021 The MathWorks, Inc.
 
 #########  Release History  #########  
+v 4.1 (R2021a)	May 2021    Removed hardstops from single acting pump examples
+                            Added example single acting pump, motor driven
+
 v 4.1 (R2021a)	Mar 2021    Updated for R2021a 
                             Added library blocks that use foundation library elements
                             Added/Updated examples to use new blocks

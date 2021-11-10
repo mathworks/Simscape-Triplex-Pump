@@ -31,6 +31,7 @@ plot(simlog_t, simlog_vTank, 'LineWidth', 1)
 grid on
 title('Tank Volume')
 ylabel('Volume (l)')
+xlabel('Time (s)')
 
 % Remove temporary variables
 clear simlog_t simlog_handles temp_colororder

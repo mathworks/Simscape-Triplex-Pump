@@ -27,8 +27,8 @@ set_param(find_system('sm_ssci_03_cylinder_sa_pump_flib','FindAll', 'on','type',
 % The plot below shows the flow rate into and out of the pump.
 %
 
-
 sm_ssci_02_cylinder_sa_pump_plot1qpump;
+
 %%
 %
 % The plot below shows the volume of the tank.  It decreases with each
@@ -36,8 +36,17 @@ sm_ssci_02_cylinder_sa_pump_plot1qpump;
 % valve.
 %
 
-
 sm_ssci_02_cylinder_sa_pump_plot2vtank;
+
+%%
+%
+% The plot below shows the speed of the piston and the torque applied at
+% the crank.  The required torque varies primarily with the speed of the
+% piston due to friction and force required to move the fluid into and out
+% of the piston chamber.
+%
+
+sm_ssci_02_cylinder_sa_pump_plot3tmotor;
 
 %%
 
