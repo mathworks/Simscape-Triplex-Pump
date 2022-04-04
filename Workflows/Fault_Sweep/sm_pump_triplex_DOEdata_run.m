@@ -2,7 +2,7 @@ function [test_Nominal, test_Results] = sm_pump_triplex_DOEdata_run(mdlname,sets
 % Code to generate machine learning training data sets for the triplex pump
 % example and plot results.
 %
-% Copyright 2017-2021 The MathWorks, Inc.
+% Copyright 2017-2022 The MathWorks, Inc.
 
 %% Ranges for fault sweep
 % Define parameter ranges for tests

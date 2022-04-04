@@ -2,7 +2,7 @@ function sm_pump_triplex_open_system(filename)
 % Function checks if file exists before opening.
 % Also adjusts command for Mac or Windows
 
-% Copyright 2016-2021 The MathWorks, Inc.
+% Copyright 2016-2022 The MathWorks, Inc.
 
 if (exist(filename,'file'))
     open_system(filename)

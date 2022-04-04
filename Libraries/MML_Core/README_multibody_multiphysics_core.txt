@@ -33,7 +33,7 @@ rules:
    the position from Simscape Multibody to the Simscape network.  The examples in this submission
    show how to do that.
 
-Copyright 2013-2021 The MathWorks, Inc.
+Copyright 2013-2022 The MathWorks, Inc.
 
 #########  Release History  #########  
 v 4.1 (R2021a)	May 2021    Removed hardstops from single acting pump examples

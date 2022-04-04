@@ -5,7 +5,7 @@
 % revolution of the pump shaft as fluid is drawn through the inlet check
 % valve.
 %
-% Copyright 2017-2021 The MathWorks, Inc.
+% Copyright 2017-2022 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sm_ssci_02_cylinder_sa_pump', 'var')

@@ -1,5 +1,5 @@
 % Code to plot simulation results from sm_ssci_hinge_hardstop
-% Copyright 2015-2021 The MathWorks, Inc.
+% Copyright 2015-2022 The MathWorks, Inc.
 
 % Reuse figure if it exists, else create new figure
 try

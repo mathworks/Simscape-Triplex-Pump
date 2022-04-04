@@ -4,7 +4,7 @@
 % The plot below shows the speed of the crank and slider as the crank
 % is driven with a constant torque.
 %
-% Copyright 2017-2021 The MathWorks, Inc.
+% Copyright 2017-2022 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sm_ssci_01_slider_crank', 'var')
