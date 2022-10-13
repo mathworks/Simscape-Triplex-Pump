@@ -20,7 +20,7 @@
 
 open_system('sm_ssci_02_cylinder_sa_pump')
 
-set_param(find_system('sm_ssci_02_cylinder_sa_pump','FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
+set_param(find_system('sm_ssci_02_cylinder_sa_pump','MatchFilter',@Simulink.match.allVariants,'FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
 
 %% Simulation Results from Simscape Logging
 %%

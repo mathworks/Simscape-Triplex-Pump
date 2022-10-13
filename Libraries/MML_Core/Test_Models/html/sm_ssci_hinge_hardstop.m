@@ -21,7 +21,7 @@
 
 open_system('sm_ssci_hinge_hardstop')
 
-set_param(find_system('sm_ssci_hinge_hardstop','FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
+set_param(find_system('sm_ssci_hinge_hardstop','MatchFilter',@Simulink.match.allVariants,'FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
 
 %% Foundation Library Method
 % This method is easily assembled using Foundation library elements.

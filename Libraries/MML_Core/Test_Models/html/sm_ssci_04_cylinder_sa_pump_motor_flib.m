@@ -19,7 +19,7 @@
 
 open_system('sm_ssci_04_cylinder_sa_pump_motor_flib')
 
-set_param(find_system('sm_ssci_04_cylinder_sa_pump_motor_flib','FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
+set_param(find_system('sm_ssci_04_cylinder_sa_pump_motor_flib','MatchFilter',@Simulink.match.allVariants,'FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
 
 %% Simulation Results from Simscape Logging
 %%

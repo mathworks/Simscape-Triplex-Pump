@@ -13,7 +13,7 @@
 
 open_system('sm_ssci_01_slider_crank')
 
-set_param(find_system('sm_ssci_01_slider_crank','FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
+set_param(find_system('sm_ssci_01_slider_crank','MatchFilter',@Simulink.match.allVariants,'FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
 
 %% Simulation Results from Simscape Logging
 %%

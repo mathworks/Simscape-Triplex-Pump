@@ -22,7 +22,7 @@
 
 open_system('sm_pump_triplex')
 mdlname = bdroot;
-set_param(find_system('sm_pump_triplex','FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
+set_param(find_system('sm_pump_triplex','MatchFilter',@Simulink.match.allVariants,'FindAll', 'on','type','annotation','Tag','ModelFeatures'),'Interpreter','off')
 
 %% 
 % <<sm_triplex_pump_mechExp_NoFaults.png>>
