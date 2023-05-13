@@ -1,7 +1,7 @@
 % Code to sweep check valve pressure settings for the triplex pump
 % example and plot results.
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 mdlname =  'sm_pump_triplex';
 crp_set = linspace(30000,100000,8);
@@ -46,11 +46,11 @@ for ci= 1:length(crp_set)
         if (mxp_set(mi)>crp_set(ci))
             run_num = run_num+1;
             simlog_run = simOut(run_num).simlog_sm_pump_triplex;
-            simlog_test(run_num).t = simlog_run.Pump.Plunger_1.Check_Valve_Outlet.flow_rate.series.time;
-            simlog_test(run_num).q1 = simlog_run.Pump.Plunger_1.Check_Valve_Outlet.flow_rate.series.values('lpm');
-            simlog_test(run_num).q2 = simlog_run.Pump.Plunger_2.Check_Valve_Outlet.flow_rate.series.values('lpm');
-            simlog_test(run_num).q3 = simlog_run.Pump.Plunger_3.Check_Valve_Outlet.flow_rate.series.values('lpm');
-            simlog_test(run_num).qA = simlog_run.Sensing_pq_Out.Flow_Rate_Sensor.q.series.values('lpm');
+            simlog_test(run_num).t = simlog_run.Pump.Plunger_1.Check_Valve_Outlet.q_A.series.time;
+            simlog_test(run_num).q1 = simlog_run.Pump.Plunger_1.Check_Valve_Outlet.q_A.series.values('lpm');
+            simlog_test(run_num).q2 = simlog_run.Pump.Plunger_2.Check_Valve_Outlet.q_A.series.values('lpm');
+            simlog_test(run_num).q3 = simlog_run.Pump.Plunger_3.Check_Valve_Outlet.q_A.series.values('lpm');
+            simlog_test(run_num).qA = simlog_run.Sensing_pq_Out.Flow_Rate_Sensor.V.series.values('lpm');
             simlog_test(run_num).wP = simlog_run.Pump.Crank_Bearing.Rz.w.series.values('rpm');
             simlog_test(run_num).crp = crp_set(ci);
             simlog_test(run_num).mxp = mxp_set(mi);

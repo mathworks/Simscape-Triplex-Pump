@@ -3,7 +3,7 @@
 %
 % The plot below shows the flow rate into and out of the pump.
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sm_ssci_02_cylinder_sa_pump', 'var')
@@ -21,9 +21,9 @@ clf(h1_sm_ssci_02_cylinder_sa_pump)
 temp_colororder = get(gca,'defaultAxesColorOrder');
 
 % Get simulation results
-simlog_t = simlog_sm_ssci_02_cylinder_sa_pump.Check_Valve_Input.flow_rate.series.time;
-simlog_qChkvI  = simlog_sm_ssci_02_cylinder_sa_pump.Check_Valve_Input.flow_rate.series.values('lpm');
-simlog_qChkvO  = simlog_sm_ssci_02_cylinder_sa_pump.Check_Valve_Output.flow_rate.series.values('lpm');
+simlog_t = simlog_sm_ssci_02_cylinder_sa_pump.Check_Valve_Input.q_A.series.time;
+simlog_qChkvI  = simlog_sm_ssci_02_cylinder_sa_pump.Check_Valve_Input.q_A.series.values('lpm');
+simlog_qChkvO  = simlog_sm_ssci_02_cylinder_sa_pump.Check_Valve_Output.q_A.series.values('lpm');
 simlog_pPiston = simlog_sm_ssci_02_cylinder_sa_pump.Prismatic_Piston.Pz.v.series.values('m/s');
 
 % Plot results

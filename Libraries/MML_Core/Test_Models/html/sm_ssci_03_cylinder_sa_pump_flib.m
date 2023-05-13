@@ -6,12 +6,13 @@
 % the other half of the rotation, fluid is pushed through the outlet check
 % valve and exits the pump.
 %
-% The piston chamber is modeled with a single-acting hydraulic cylinder.
-% The force, position, and velocity are held consistent between the
-% hydraulic and mechanical models using physical signal connections.
+% The piston chamber is modeled with a few elements from the Simscape
+% Foundational Library. The force, position, and velocity are held
+% consistent between the hydraulic and mechanical models using physical
+% signal connections.
 % 
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 
 

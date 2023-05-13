@@ -1,6 +1,6 @@
 % Code to generate example measured data for parameter tuning.
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 %% Configure model for dyno test
 set_param([mdlname '/Driver'],'popup_driver_type','Dyno');

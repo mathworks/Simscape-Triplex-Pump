@@ -11,7 +11,7 @@ component PS_force_hydraulic_chamber_trans_comp
 % of the output member.  Output port f is the force acting on the output 
 % member.
 
-% Copyright 2016-2022 The MathWorks, Inc.
+% Copyright 2016-2023 The MathWorks, Inc.
 
 nodes
     A = foundation.hydraulic.hydraulic; % A:right

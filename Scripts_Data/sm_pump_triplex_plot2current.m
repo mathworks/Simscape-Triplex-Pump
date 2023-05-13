@@ -4,7 +4,7 @@
 % The plot below shows the pressure at the output of the pump
 % as well as the current draw of the motor driving the pump.
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sm_pump_triplex', 'var')
@@ -22,7 +22,7 @@ clf(h2_sm_pump_triplex)
 temp_colororder = get(gca,'defaultAxesColorOrder');
 
 % Get simulation results
-simlog_t = simlog_sm_pump_triplex.Pump.Plunger_1.Check_Valve_Outlet.flow_rate.series.time;
+simlog_t = simlog_sm_pump_triplex.Pump.Plunger_1.Check_Valve_Outlet.q_A.series.time;
 simlog_pO = simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.P.series.values('bar');
 simlog_iM = simlog_sm_pump_triplex.Sensing_Current.Current_Sensor.I.series.values('A');
 

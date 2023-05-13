@@ -1,6 +1,6 @@
 %% Triplex Pump Parameters
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 TRP_Par.Material.Steel.rho = 7750;  % kg/m^3
 

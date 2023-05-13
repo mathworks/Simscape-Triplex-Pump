@@ -5,7 +5,7 @@
 % revolution of the pump shaft as fluid is drawn through the inlet check
 % valve.
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sm_ssci_02_cylinder_sa_pump', 'var')
@@ -23,7 +23,7 @@ clf(h2_sm_ssci_02_cylinder_sa_pump)
 temp_colororder = get(gca,'defaultAxesColorOrder');
 
 % Get simulation results
-simlog_t = simlog_sm_ssci_02_cylinder_sa_pump.Check_Valve_Input.flow_rate.series.time;
+simlog_t = simlog_sm_ssci_02_cylinder_sa_pump.Tank.V.series.time;
 simlog_vTank  = simlog_sm_ssci_02_cylinder_sa_pump.Tank.V.series.values('l');
 
 % Plot results

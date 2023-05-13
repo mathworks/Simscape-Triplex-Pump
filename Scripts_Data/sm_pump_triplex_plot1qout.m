@@ -4,7 +4,7 @@
 % The plot below shows the volumetric flow rate at the output of each
 % plunger as well as the overall output of the pump.
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sm_pump_triplex', 'var')
@@ -22,11 +22,11 @@ clf(h1_sm_pump_triplex)
 temp_colororder = get(gca,'defaultAxesColorOrder');
 
 % Get simulation results
-simlog_t = simlog_sm_pump_triplex.Pump.Plunger_1.Check_Valve_Outlet.flow_rate.series.time;
-simlog_q1 = simlog_sm_pump_triplex.Pump.Plunger_1.Check_Valve_Outlet.flow_rate.series.values('lpm');
-simlog_q2 = simlog_sm_pump_triplex.Pump.Plunger_2.Check_Valve_Outlet.flow_rate.series.values('lpm');
-simlog_q3 = simlog_sm_pump_triplex.Pump.Plunger_3.Check_Valve_Outlet.flow_rate.series.values('lpm');
-simlog_qA = simlog_sm_pump_triplex.Sensing_pq_Out.Flow_Rate_Sensor.q.series.values('lpm');
+simlog_t = simlog_sm_pump_triplex.Pump.Plunger_1.Check_Valve_Outlet.q_A.series.time;
+simlog_q1 = simlog_sm_pump_triplex.Pump.Plunger_1.Check_Valve_Outlet.q_A.series.values('lpm');
+simlog_q2 = simlog_sm_pump_triplex.Pump.Plunger_2.Check_Valve_Outlet.q_A.series.values('lpm');
+simlog_q3 = simlog_sm_pump_triplex.Pump.Plunger_3.Check_Valve_Outlet.q_A.series.values('lpm');
+simlog_qA = simlog_sm_pump_triplex.Sensing_pq_Out.Flow_Rate_Sensor.V.series.values('lpm');
 
 simlog_wP = simlog_sm_pump_triplex.Pump.Crank_Bearing.Rz.w.series.values('rpm');
 

@@ -2,11 +2,11 @@ function results = sm_pump_triplex_getMeas(simOut_var)
 % Code to extract signals representing measurements
 % from the single simulation output of sm_pump_triplex
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 for i=1:length(simOut_var)
-    results(i).sim.time   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Flow_Rate_Sensor.q.series.time;
-    results(i).sim.qOut   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Flow_Rate_Sensor.q.series.values('lpm');
+    results(i).sim.time   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Flow_Rate_Sensor.V.series.time;
+    results(i).sim.qOut   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Flow_Rate_Sensor.V.series.values('lpm');
     results(i).sim.iMotor = simOut_var(i).simlog_sm_pump_triplex.Sensing_Current.Current_Sensor.I.series.values('A');
     results(i).sim.pIn    = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_In.Pressure_Sensor.P.series.values('bar');
     results(i).sim.pOut   = simOut_var(i).simlog_sm_pump_triplex.Sensing_pq_Out.Pressure_Sensor.P.series.values('bar');

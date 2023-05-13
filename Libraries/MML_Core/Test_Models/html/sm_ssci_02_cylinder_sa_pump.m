@@ -1,4 +1,4 @@
-%% Single Piston Pump, Custom Piston
+%% Single Piston Pump with Hardstops and Friction
 % 
 % This example models a single piston pump.  The rotation of the pump
 % crankshaft slides the piston back and forth.  During half of the rotation,
@@ -8,11 +8,12 @@
 %
 % The piston chamber is modeled with a single-acting hydraulic cylinder.
 % The force, position, and velocity are held consistent between the
-% hydraulic and mechanical models using physical signal connections. This
-% version uses a custom Simscape language implementation.
+% hydraulic and mechanical models using physical signal connections.
+% Hardstops, friction, and fluid compressibility can be enabled directly on
+% the block.
 % 
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 
 

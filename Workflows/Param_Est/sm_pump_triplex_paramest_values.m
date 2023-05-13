@@ -1,7 +1,7 @@
 function sm_pump_triplex_paramest_values(mdlname, value_set)
 % Code to load check valve pressure settings into MATLAB workspace.
 %
-% Copyright 2017-2022 The MathWorks, Inc.
+% Copyright 2017-2023 The MathWorks, Inc.
 
 switch lower(value_set)
     case 'initial'
