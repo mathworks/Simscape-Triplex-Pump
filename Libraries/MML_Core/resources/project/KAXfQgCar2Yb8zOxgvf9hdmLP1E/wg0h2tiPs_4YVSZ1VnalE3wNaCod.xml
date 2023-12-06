@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Info Type="Shutdown" Visible="0" Icon="" File="Scripts_Data/shutdown_Multibody_Multiphysics_Core.m" Name="shutdown_Multibody_Multiphysics_Core"/>
+<Info File="Scripts_Data/shutdown_Multibody_Multiphysics_Core.m" Icon="" Name="shutdown_Multibody_Multiphysics_Core" Type="Shutdown" Visible="0"/>

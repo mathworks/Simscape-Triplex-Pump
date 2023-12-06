@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<Info Type="StartUp" Visible="0" Icon="" File="Scripts_Data/startup_Multibody_Multiphysics_Core.m" Name="startup_Multibody_Multiphysics_Core"/>
+<Info File="Scripts_Data/startup_Multibody_Multiphysics_Core.m" Icon="" Name="startup_Multibody_Multiphysics_Core" Type="StartUp" Visible="0"/>
