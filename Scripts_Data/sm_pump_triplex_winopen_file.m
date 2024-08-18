@@ -2,7 +2,7 @@ function sm_pump_triplex_winopen_file(filename)
 % Function checks if file exists before opening.
 % Also adjusts command for Mac or Windows
 
-% Copyright 2016-2023 The MathWorks, Inc.
+% Copyright 2016-2024 The MathWorks, Inc.
 
 datasheetUrl = 'http://www.catpumps.com/products/pdfs/1051_C.pdf';
 

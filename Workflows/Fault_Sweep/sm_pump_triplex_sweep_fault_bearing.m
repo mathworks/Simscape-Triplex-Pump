@@ -1,7 +1,7 @@
 % Code to sweep inlet port blockage for the triplex pump example and
 % plot the results.
 %
-% Copyright 2017-2023 The MathWorks, Inc.
+% Copyright 2017-2024 The MathWorks, Inc.
 
 if (~exist('mdlname','var'))
     mdlname = 'sm_pump_triplex';

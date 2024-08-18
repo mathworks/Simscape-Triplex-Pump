@@ -3,7 +3,7 @@
 % Newly trained classifiers are then saved to a model which can be used in
 % simulation or converted to embedded code using MATLAB Coder.
 %
-% Copyright 2017-2023 The MathWorks, Inc.
+% Copyright 2017-2024 The MathWorks, Inc.
 
 % If necessary, load previously generated training data
 if(~exist('algo_training_data','var'))

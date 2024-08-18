@@ -4,7 +4,7 @@
 % The plot below shows the pressure at the output of the pump
 % as well as the current draw of the motor driving the pump.
 %
-% Copyright 2017-2023 The MathWorks, Inc.
+% Copyright 2017-2024 The MathWorks, Inc.
 
 % Generate simulation results if they don't exist
 if ~exist('simlog_sm_pump_triplex', 'var')

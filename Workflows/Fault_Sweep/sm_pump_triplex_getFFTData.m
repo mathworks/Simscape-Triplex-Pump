@@ -1,7 +1,7 @@
 function [freq, mag] = sm_pump_triplex_getFFTData(tout,yout)
 % Code to calculate frequency response data
 %
-% Copyright 2017-2023 The MathWorks, Inc.
+% Copyright 2017-2024 The MathWorks, Inc.
 
 % Interpolate onto periodic time base
 np = 2^floor(log(numel(tout))/log(2));
