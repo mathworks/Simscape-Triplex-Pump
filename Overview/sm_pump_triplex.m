@@ -188,6 +188,7 @@ set_param([bdroot '/Driver'],'winding_fault_enable_P','Off');
 % The data plotted below has been sampled and has had noise added to it to 
 % replicate the effect of sensor noise in a real system.
 
+close(h1_sm_pump_triplex)
 [test_Nominal, test_Results] = sm_pump_triplex_DOEdata_run(bdroot,'useLong','UseSeries','off');
 
 % Update files in Fault Sweep directory
