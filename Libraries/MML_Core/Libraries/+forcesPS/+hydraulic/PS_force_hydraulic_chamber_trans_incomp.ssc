@@ -4,7 +4,7 @@ component PS_force_hydraulic_chamber_trans_incomp
 % energy into mechanical energy in the form of translational motion of the
 % converter output member.
 
-% Copyright 2016-2024 The MathWorks, Inc.
+% Copyright 2016-2025 The MathWorks, Inc.
 
 nodes
     A = foundation.hydraulic.hydraulic;                    % A:right

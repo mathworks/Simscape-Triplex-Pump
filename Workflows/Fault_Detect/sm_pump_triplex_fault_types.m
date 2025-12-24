@@ -1,7 +1,7 @@
 classdef sm_pump_triplex_fault_types < Simulink.IntEnumType
     % Enumeration data for fault types
     %
-    % Copyright 2017-2024 The MathWorks, Inc.
+    % Copyright 2017-2025 The MathWorks, Inc.
     
     enumeration
         FaultDetectOff(0)

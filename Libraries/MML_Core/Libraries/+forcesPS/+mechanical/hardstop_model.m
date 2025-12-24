@@ -1,7 +1,7 @@
 classdef hardstop_model < int32
     % Enumeration class for hardstop model options.
     
-    % Copyright 2017-2024 The MathWorks, Inc.
+    % Copyright 2017-2025 The MathWorks, Inc.
     
     enumeration
         full_damped_rebound(0)

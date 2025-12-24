@@ -4,7 +4,7 @@
 % The plots below show the frequency response of the pump output grouped by
 % fault combination.
 %
-% Copyright 2017-2024 The MathWorks, Inc.
+% Copyright 2017-2025 The MathWorks, Inc.
 
 % Reuse figure if it exists, else create new figure
 if ~exist('h7_sm_pump_triplex', 'var') || ...

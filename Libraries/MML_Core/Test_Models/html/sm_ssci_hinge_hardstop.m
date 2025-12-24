@@ -14,7 +14,7 @@
 % For all methods, the position and orientation of the two frames connected
 % to the joint must be coordinated with the limits set in the hard stop.
 %
-% Copyright 2016-2024 The MathWorks, Inc.
+% Copyright 2016-2025 The MathWorks, Inc.
 
 
 %% Model

@@ -1,5 +1,5 @@
 function startup_Multibody_Multiphysics_Core
-% Copyright 2016-2024 The MathWorks, Inc.
+% Copyright 2016-2025 The MathWorks, Inc.
 
 curr_proj = simulinkproject;
 cd(curr_proj.RootFolder);

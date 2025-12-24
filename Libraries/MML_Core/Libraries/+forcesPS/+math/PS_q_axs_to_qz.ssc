@@ -3,7 +3,7 @@ component PS_q_axs_to_qz
 % This block calculates the rotational angle about the z axis using Angle
 % and Axis outputs of the Transform Sensor block
 
-% Copyright 2016-2024 The MathWorks, Inc.
+% Copyright 2016-2025 The MathWorks, Inc.
 
 inputs
     q = {0, 'rad'}; % q:left

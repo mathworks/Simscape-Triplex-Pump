@@ -6,7 +6,7 @@ component PS_force_friction_trans
 % sum of the Coulomb and Stribeck frictions at zero velocity is often 
 % referred to as the breakaway friction.
 
-% Copyright 2016-2024 The MathWorks, Inc.
+% Copyright 2016-2025 The MathWorks, Inc.
 
 inputs
     v = {0, 'm/s'}; % v:left
