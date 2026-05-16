@@ -1,6 +1,6 @@
 function lib( libInfo )
 % Customize library
-% Copyright 2005-2025 The MathWorks, Inc
+% Copyright 2005-2026 The MathWorks, Inc
 
 libInfo.Name = 'Hydraulic';
 end

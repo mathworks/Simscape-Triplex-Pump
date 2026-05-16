@@ -11,7 +11,7 @@ component PS_force_hydraulic_chamber_trans_comp
 % of the output member.  Output port f is the force acting on the output 
 % member.
 
-% Copyright 2016-2025 The MathWorks, Inc.
+% Copyright 2016-2026 The MathWorks, Inc.
 
 nodes
     A = foundation.hydraulic.hydraulic; % A:right
@@ -39,36 +39,11 @@ parameters (Access = private)
 end
 
 variables (Access = private)
-    pressure_chamber = {0,	  'Pa'   };	% Fluid pressure in the chamber
+    pressure_chamber = {value = initial_pressure};	% Fluid pressure in the chamber
     volume           = {1e-4, 'm^3'  }; % Chamber volume
     q                = {0,    'm^3/s'}; % Flow rate leaving the converter
     qV               = {0,    'm^3/s'}; % Flow rate leaving the converter due to volume changes
     qrho             = {0,    'm^3/s'}; % Flow rate leaving the converter due to density changes
-end
-
-function setup
-    % Parameter range checking
-    if area <= 0
-        pm_error('simscape:GreaterThanZero','Piston area');
-    end
-    if V_dead <= 0
-        pm_error('simscape:GreaterThanZero','Chamber dead volume')
-    end
-    if k_sh < 1
-        pm_error('simscape:GreaterThanOrEqual','Specific heat ratio','1')
-    end
-    if k_sh >= 2
-        pm_error('simscape:LessThan','Specific heat ratio','2')
-    end
-    if initial_pressure <= {-1, 'atm'}
-        pm_error('simscape:GreaterThanOrEqual','Initial pressure','absolute zero')
-    end
-    
-    % Derived parameters
-    rho_g0 = (initial_pressure + {1, 'atm'}) / ( {287.04, 'J/kg/K'} * {293.15, 'K'} );
-    
-    % Initial conditions
-    pressure_chamber = initial_pressure; 
 end
 
 branches
@@ -78,8 +53,15 @@ end
 equations
     assert((A.range_error == 1) | (pressure_chamber > {-1,'atm'}), 'Pressure fell below absolute zero');
     assert((A.range_error == 2) | (pressure_chamber > {-1,'atm'}), 'Pressure fell below absolute zero',Warn=true);
-    
+    assert(area > 0)
+    assert(V_dead > 0)
+    assert(k_sh >= 1)
+    assert(k_sh < 2)
+    assert(initial_pressure > {-1, 'atm'})
     let
+        % Derived parameters
+        rho_g0 = (initial_pressure + {1, 'atm'}) / ( {287.04, 'J/kg/K'} * {293.15, 'K'} );
+
         % The fluid mixture density at node P is calculated to know exactly
         % how much fluid is actually displaced.
         p_abs  = pressure_chamber + p_atm;

@@ -15,7 +15,7 @@
 % motor windings can be simulated. MATLAB code shows how to accelerate
 % testing by reusing results from previous simulations.
 % 
-% Copyright 2017-2025 The MathWorks, Inc.
+% Copyright 2017-2026 The MathWorks, Inc.
 
 
 %% Model
@@ -203,6 +203,7 @@ close(gcf); % Close frequency plot so that we can annotate with text
 % failing based on measured data.
 %
 
+close(gcf);
 sm_pump_triplex_DOEdata_plot2freq
 
 %% Design Fault Classification Algorithm
